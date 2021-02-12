@@ -12,6 +12,7 @@ libraryDependencies ++= {
   val akkaHttpVersion = "10.2.3"
   val circeVersion = "0.13.0"
   val akkaHttpCirceVersion = "1.35.3"
+  val logbackVersion = "1.2.3"
 
   Seq(
     "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
@@ -19,7 +20,9 @@ libraryDependencies ++= {
     "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
     "io.circe"          %% "circe-core" % circeVersion,
     "io.circe"          %% "circe-generic" % circeVersion,
-    "de.heikoseeberger" %% "akka-http-circe" % akkaHttpCirceVersion
+    "de.heikoseeberger" %% "akka-http-circe" % akkaHttpCirceVersion,
+    "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
+    "ch.qos.logback"    % "logback-classic" % logbackVersion
   )
 }
 
